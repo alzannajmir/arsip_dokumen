@@ -90,11 +90,11 @@
                                 $arsip_file = $d['arsip_file'];
 
                                 if (in_array($arsip_jenis, ["png", "jpg", "gif", "jpeg"])) {
-                                    echo '<img src="../arsip/' . $date . '/' . $arsip_file . '">';
+                                    echo '<img src="../'.$arsip_file.'">';
                                 } elseif ($arsip_jenis == "pdf") {
                                     echo '
                                     <div class="pdf-singe-pro">
-                                        <a class="media" href="../arsip/' . $date . '/' . $arsip_file . '"></a>
+                                        <a class="media" href="../'.$arsip_file.'"></a>
                                     </div>
                                 ';
                                     } else {
